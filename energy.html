@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Energy Efficiency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Energy Efficiency Solutions</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="water.html">Water Management</a>
+            <a href="waste.html">Waste Management</a>
+            <a href="transport.html">Transportation</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Innovative Energy Practices</h2>
+        <p>Discover strategies for reducing energy consumption and transitioning to renewable energy sources</p>
+        <ul class="solution-list">
+            <li>Smart energy meters for monitoring consumption</li>
+            <li>Solar panel installation for clean energy generation</li>
+            <li>Energy-efficient appliances for everyday use</li>
+        </ul>
+        <canvas id="energyChart" width="400" height="200"></canvas>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+    <script>
+        const ctx = document.getElementById('energyChart').getContext('2d');
+        const energyChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Solar', 'Wind', 'Hydro', 'Geothermal'],
+                datasets: [{
+                    label: 'Energy Production (GW)',
+                    data: [30, 50, 40, 20],
+                    backgroundColor: ['#76c7c0', '#4caf50', '#2196f3', '#ff9800']
+                }]
+            },
+            options: { responsive: true }
+        });
+    </script>
+</body>
+</html>

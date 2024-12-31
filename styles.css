@@ -1,0 +1,191 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f4f4f9;
+}
+
+header {
+    background: #1b2838;
+    color: #f4f4f9;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #76c7c0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f9;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards, .solution-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card, .solution-btn {
+    background: #1b2838;
+    border: 1px solid #76c7c0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    color: #f4f4f9;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card:hover, .solution-btn:hover {
+    transform: translateY(-10px);
+    background: #76c7c0;
+    color: #1b2838;
+}
+
+#mapContainer {
+    height: 400px;
+    width: 100%;
+    background: #2c5364;
+    margin-top: 20px;
+    border: 2px solid #76c7c0;
+    border-radius: 12px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1b2838;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    color: #f4f4f9;
+}
+
+
+header nav a {
+    color: #76c7c0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #f4f4f9;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.solution-list {
+    list-style: none;
+    padding: 0;
+}
+
+.solution-list li {
+    background: #1b2838;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #76c7c0;
+}
+
+#energyChart, #transportSvg {
+    margin-top: 20px;
+    
+}
+
+#wasteGrid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background: #1b2838;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #76c7c0;
+    color: #f4f4f9;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1b2838;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    color: #f4f4f9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #76c7c0;
+}
+
+form input, form textarea, form button {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #76c7c0;
+    border-radius: 6px;
+    background: #2c5364;
+    color: #f4f4f9;
+    font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #f4f4f9;
+}
+
+form button {
+    background: #76c7c0;
+    color: #1b2838;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #f4f4f9;
+    color: #1b2838;
+}

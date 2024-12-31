@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Science Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Interactive Smart City Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About the Portal</h2>
+        <p>
+            This webpage allows you to discover innovative ways to make cities sustainable and efficient. Navigate through the buttons to explore the world of some of the smart city 
+            solutions we can do to keep our city sustainable.
+        </p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Real-Time </br> Simulations</h3>
+            </div>
+            <div class="card">
+                <h3>Interactive </br> Maps</h3>
+            </div>
+            <div class="card">
+                <h3>Community Collaboration</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <h2>Solutions</h2>
+        <div class="solution-links">
+            <a href="energy.html" class="solution-btn">Energy Efficiency</a>
+            <a href="water.html" class="solution-btn">Water Management</a>
+            <a href="waste.html" class="solution-btn">Waste Management</a>
+            <a href="transport.html" class="solution-btn">Transportation</a>
+        </div>
+        <h2>Interactive Map</h2>
+        <div id="mapContainer">
+            <p>Loading map...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
